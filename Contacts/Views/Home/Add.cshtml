@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    <div> 
+        <h1>Add Contact</h1>
+        <h3>@Html.ActionLink("Back to list", "Index", "Home")</h3>
+        <form action="/Home/AddContact" method="POST">
+            <p>
+                <label>Name</label>
+                <input type="text" id="Name" name="Name" />
+            </p>
+            <p>
+                <label>Phone Number</label>
+                <input type="text" id="PhoneNumber" name="PhoneNumber" />
+            </p>
+            <button>Save</button>
+        </form>
+    </div>
+</body>
+</html>
